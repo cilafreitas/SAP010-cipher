@@ -1,4 +1,5 @@
 import cipher from './cipher.js';
+console.log(cipher);
 //manipulação de DOM
 
 // clicar botão
@@ -8,14 +9,14 @@ import cipher from './cipher.js';
 
 //seletores de DOM
 
-console.log(cipher);
+/*console.log(cipher);
 
 const button = document.getElementById("button")
 const title = document.getElementById("title")
-title.addEventListener("click", teste)
+button.addEventListener("click", teste)
 
-
+const textearea = document.getElementById("input-texto")
 
 function teste() {
-    console.log("chamou a função teste")
-}
+    console.log(textearea.value)
+}*/
