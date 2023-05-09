@@ -1,5 +1,25 @@
 import cipher from './cipher.js';
-console.log(cipher);
+//console.log(cipher);//
+
+
+document.getElementById("codificar").addEventListener("click", codificar);
+function codificar(){
+  const texto = document.getElementById("outputEncode").value; 
+  const desloc = parseInt(document.getElementById("desloc").value);
+  const mensagemCod = cipher.encode(desloc, texto);
+  document.getElementById("outputEncode").value= mensagemCod;
+}
+
+document.getElementById("decodificar").addEventListener("click", decodificar);
+function decodificar(){
+  const texto = document.getElementById("outputDecode").value; 
+  const desloc = parseInt(document.getElementById("desloc").value);
+  const descript = cipher.decode(desloc, texto);
+  document.getElementById("outputDecode").value=descript;
+}
+
+
+
 //manipulação de DOM
 
 // clicar botão

@@ -11,8 +11,7 @@
   <body>
     <div id="root">
       <h1 id="title">Codificador e Decodificador</h1>
-      <h2>Caesar Cipher</h2>
-      <button id="button">Botão</button>
+      <p>Caesar Cipher</p>
     </div>
 
 
@@ -21,16 +20,31 @@
         <h3>Digite sua mensagem:</h3>
       </div>
 
-      <div class="container-input">
+      <!--<div class="container-input">
         <div class="input">
           <textarea id="input-texto" placeholder="Digite seu texto aqui..."></textarea>
         </div>
+      </div>-->
+
+
+      <div>
+      <input id="digite" placeholder=><br><br>
+      <b>Deslocamento (desloc):</b><br><br>
+      <input type="number" id="desloc" value="3"><br><br>
+
+      <button id="codificar">Codificar</button>
+      <button id="decodificar">Decodificar</button>
+    </div>
+
+
+
+    <div id="result" class="result">
+      <h3 id="msgCod">Mensagem codificada:</h3>
+        <input id=" outputEncode">
+      <h3 id="msgDecod">Mensagem decodificada:</h3>
+        <input id="outputDecode">
       </div>
 
-      <div id="output">
-         <h3>Mensagem criptografada:</h3>
-
-      </div>
           
 
     <script src="index.js" type="module"></script>
