@@ -3,19 +3,23 @@ import cipher from './cipher.js';
 
 
 document.getElementById("codificar").addEventListener("click", codificar);
-function codificar(){
-  const texto = document.getElementById("outputEncode").value; 
+
+function codificar() {
+  const texto = document.getElementById("digite").value.toUpperCase(); 
   const desloc = parseInt(document.getElementById("desloc").value);
-  const mensagemCod = cipher.encode(desloc, texto);
-  document.getElementById("outputEncode").value= mensagemCod;
+  const result = cipher.encode(desloc, texto);
+  document.getElementById("msgDecod").innerHTML="Mensagem codificada";
+  document.getElementById("result").value=result;
 }
 
 document.getElementById("decodificar").addEventListener("click", decodificar);
-function decodificar(){
-  const texto = document.getElementById("outputDecode").value; 
+
+function decodificar() {
+  const texto = document.getElementById("result").value; 
   const desloc = parseInt(document.getElementById("desloc").value);
-  const descript = cipher.decode(desloc, texto);
-  document.getElementById("outputDecode").value=descript;
+  const result = cipher.decode(desloc, texto);
+  document.getElementById("msgDecod").innerHTML="Mensagem decodificada";
+  document.getElementById("result").value=result;
 }
 
 

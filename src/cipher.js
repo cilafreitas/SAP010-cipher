@@ -29,22 +29,29 @@ const cipher = {
       let textoCodificado ="";  //variável que irá receber o texto codificado
       for(let i = 0; i< texto.length; i++){ // Estrutura de repetição Laço For
         let caracter = texto[i];
-        if(caracter.match(/[a-z]/i)){
+        if(caracter.match(/[A-Z]/i)){
           const codigoAsc = texto.charCodeAt(i);
           if(codigoAsc >=65 && codigoAsc <=90){
             let result= codigoAsc- 65 - desloc;
-            while(result < 0){
-              result+= 26;
+            while(result < 0) {
+              result += 26;
             }
-            caracter = String.fromCharCode((result % 26)+65);
-
-          }
+            caracter = String.fromCharCode((result % 26) + 65);
+          } else if (codigoAsc >= 97 && codigoAsc <= 122) {
+            let result = codigoAsc - 97 - desloc;
+            while (result < 0) {
+              result += 26;
         }
-        textoCodificado += caracter;
+        caracter = String.fromCharCode((result % 26) + 97);
       }
-      return textoCodificado
+        
+      }
+      textoCodificado += caracter;
+      
     }
+      return textoCodificado
   }
-};
-
+}
+  
+}
 export default cipher;
