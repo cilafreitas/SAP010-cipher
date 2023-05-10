@@ -41,17 +41,17 @@ const cipher = {
             let result = codigoAsc - 97 - desloc;
             while (result < 0) {
               result += 26;
-        }
-        caracter = String.fromCharCode((result % 26) + 97);
-      }
+            }
+            caracter = String.fromCharCode((result % 26) + 97);
+          }
         
-      }
-      textoCodificado += caracter;
+        }
+        textoCodificado += caracter;
       
-    }
+      }
       return textoCodificado
+    }
   }
-}
   
 }
 export default cipher;
