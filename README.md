@@ -53,117 +53,13 @@ Foram retrabalhados os fundamentos
 do JavaScript, incluindo conceitos como variáveis, condicionais e funções,
 bem como eventos e manipulação básica de DOM, fundamentos HTML e CSS.
 
-### Os objetivos gerais deste projeto são os seguintes
 
-* Trabalhar com base em um boilerplate, a estrutura básica de um projeto em diferentes
-  pastas (através de módulos em JS).
-* Conhecer as ferramentas de manutenção e melhoria do código (linters e testes
-  unitários).
-* Aprenda sobre objetos, estruturas, métodos e iteração (loops) em JavaScript
-* Implementar controle de versão com git (e a plataforma github)
-
-## 3. Considerações gerais
-
-* Resolvemos este projeto individualmente. Recomendamos uma duração de 1-3 sprints.
-* Concentre-se em aprender e não apenas "concluir" o projeto.
-* Sugerimos que você não tente saber tudo antes de começar a codificar.
-  Não se preocupe muito agora com o que você _ainda_ não entende.
-  Você vai aprender.
-
-## 4. Marco: Critérios de Aceitação Mínimos do Projeto
-
-Esses são os requisitos que seu projeto deve atender para garantir que
-seu trabalho atenda aos objetivos principais.
-
-**1. Uma interface que deve permitir ao usuário:**
-
-* **Criptografar uma mensagem**
-  - Inserir a mensagem (texto) que deseja criptografar. A mensagem usa um
-    alfabeto simplificado (apenas letras maiúsculas).
-  - Escolher um número de deslocamento (_offset_) indicando quantas posições
+ A mensagem usa um alfabeto simplificado.
+  - Um número de deslocamento (_offset_) indicando quantas posições
     você deseja que a cifra desloque cada caractere do alfabeto. O número
-    será positivo e inteiro (inteiro positivo).
-  - Veja o resultado da mensagem criptografada.
+    é positivo e inteiro (inteiro positivo).
+  
 
-* **Descriptografar uma mensagem**
-  - Inserir a mensagem (texto) que deseja descriptografar. A mensagem usa um
-    alfabeto simplificado (apenas letras maiúsculas).
-  - Escolher um número de deslocamento (_offset_, que corresponde ao que usamos
-    para criptografar) indicando quantas posições você deseja que a cifra
-    desloque cada caractere do alfabeto. O número será positivo e inteiro
-    (inteiro positivo).
-  - Veja o resultado da mensagem descriptografada.
-
-**2. Testes unitários dos métodos.**
-Os métodos `cipher` (`encode` e `decode`) devem ser cobertos por testes
-unitários.
-
-**3. Código do seu projeto enviado para seu repositório e interface "implantada".**
-O código final deve estar um repositório no GitHub. A interface, ou página da
-web, deve ser "implantada" usando o GitHub Pages.
-
-**4. Um README contendo uma definição de produto.**
-No README, conte-nos como você pensou sobre os usuários e qual foi o seu
-processo para definir o produto final em nível de experiência e interface.
-Estas perguntas servem de guia:
-
-* Quem são os principais usuários do produto
-* Quais são os objetivos desses usuários em relação ao seu produto
-* Como você acha que o produto que você está criando está resolvendo seus
-  problemas
-
-Com esses requisitos atendidos, você pode agendar um feedback do projeto com
-um coach.
-
-## 5. Marco Opcional: Adicione suporte para letras minúsculas e outros caracteres
-
-As partes opcionais permitem que você se aprofunde um pouco mais
-nos objetivos de aprendizagem do projeto. Tudo na vida tem prós e contras,
-decida sabiamente se você quiser gastar o tempo aprofundando/refinando ou
-aprendendo coisas novas no próximo projeto.
-
-O marco de critérios mínimos não menciona o que aconteceria com letras
-minúsculas e outros caracteres (como espaços, pontuação, ...). O _boilerplate_
-inclui alguns _tests_ (comentados no início) que você pode usar como ponto
-de partida para implementar o suporte para esses casos adicionais.
-
-## 6. Considerações técnicas
-
-A lógica do projeto deve estar implementada inteiramente em JavaScript. Nesse
-projeto **NÃO** está permitido usar bibliotecas ou frameworks, só vanilla
-JavaScript.
-
-Para iniciar este projeto você terá que fazer um _fork_ e _clone_ desse
-repositório, que contém um _boilerplate_ com testes. Um _boilerplate_ é a
-estrutura básica de um projeto que serve como ponto de partida com arquivos
-iniciais e configuração básica de dependências e testes.
-
-Os testes unitários devem cobrir no mínimo de 70% dos _statements_, _functions_
-e _lines_, e um mínimo de 50% de _branches_. O _boilerplate_ já contem o setup
-e configurações necessárias para executar os testes assim como _code coverage_
-para ver o nível de cobertura dos testes usando o comando `npm test`.
-
-O _boilerplate_ que fornecemos contém esta estrutura:
-
-```text
-./
-├── .babelrc
-├── .editorconfig
-├── .eslintrc
-├── .gitignore
-├── README.md
-├── package.json
-├── src
-│   ├── cipher.js
-│   ├── index.html
-│   ├── index.js
-│   └── style.css
-└── test
-    ├── .eslintrc
-    └── cipher.spec.js
-```
-
-### Descrição de scripts/arquivos
 
 * `REAME.md`: deve explicar como "deployar", instalar e executar a aplicação,
   assim como uma introdução a aplicação, suas funcionalidades e as decisões que
