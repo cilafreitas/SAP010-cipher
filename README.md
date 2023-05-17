@@ -41,26 +41,17 @@ a cifra de Vigenère, e tem aplicação no sistema ROT13.
 
 ## 2. Resumo do projeto
 
-Neste projeto você criará a primeira aplicação web do _bootcamp_. Nela o usuário
-poderá cifrar e decifrar um texto no navegador indicando um deslocamento
-específico de caracteres (_offset_). Você fará isso usando HTML, CSS e
+Neste projeto foi criada a primeira aplicação web do _bootcamp_. Nela o usuário
+pode cifrar e decifrar um texto no navegador indicando um deslocamento
+específico de caracteres (_offset_). Foi feito isso usando HTML, CSS e
 JavaScript.
 
-O tema é livre. Você deve pensar em alguma situação de vida real em que seja
-necessário cifrar uma mensagem e pensar em como deve ser a experiência do
-usuário (tela, explicações, mensagens, cores, marca?, etc.). Algumas ideias de
-exemplo:
-
-* Criar senhas seguras para email.
-* Cifrar cartões de crédito.
-* Ferramenta de mensagens internas de uma organização
-  em uma zona de conflito.
+O tema é:
 * Mensagens secretas para alguma pessoa.
 
-Como continuação do projeto de pré-admissão, você retrabalhará os fundamentos
+Foram retrabalhados os fundamentos
 do JavaScript, incluindo conceitos como variáveis, condicionais e funções,
 bem como eventos e manipulação básica de DOM, fundamentos HTML e CSS.
- desenvolver este projeto, você também se familiarizará com novos conceitos.
 
 ### Os objetivos gerais deste projeto são os seguintes
 
