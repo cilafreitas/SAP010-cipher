@@ -12,8 +12,6 @@ body{
     color: rgb(22, 128, 128);
     text-shadow:2px 2px 2px #c0e420, 2px 2px #c0e420;
     font-size: 20px;
-    padding: 350px;
-    
 }
 
 h1{
@@ -21,7 +19,6 @@ h1{
     font-size: 46px;
     color: rgb(80, 99, 10);
     text-shadow:2px 2px 2px #c0e420, 2px 2px #c0e420;
-    
 }
 
 p{
@@ -30,7 +27,6 @@ p{
     font-family: Arial, Helvetica, sans-serif;
     text-shadow: 2px 2px 2px #c0e420, 2px 2px #c0e420;
     color: rgb(80, 99, 10);
-
 }
 
 button{
@@ -41,7 +37,6 @@ button{
     background-color: rgb(80, 99, 10);
     box-shadow: 10px 5px 10px 9px rgb(172, 166, 166);
     padding-bottom: center;
-
 }
 
 
