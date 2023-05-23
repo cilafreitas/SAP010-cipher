@@ -1,14 +1,41 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<!DOCTYPE html> <!--Define o tipo de documento como html-->
+<html lang="pt-br"> <!--Define o início do documento e o idioma-->
+
   <head>
-    <meta charset="utf-8">
-    <title>Caesar Cipher</title>
-    <link rel="stylesheet" href="style.css" />
+    <meta charset="utf-8"> <!--Conjunto de caracteres que o navegador usa para renderizar a página-->
+    <title>Caesar Cipher</title> <!-- tags que definem o título da página-->
+    <link rel="stylesheet" href="style.css" /> <!-- Indica o CSS-->
   </head>
+
+  
   <body>
-    <div id="root">
-      <h1>Primeiro Projeto Lab</h1>
+    <div id="root"> <!-- Usado para agrupar elementos HTML e aplicar estilos (css) e comportamentos(js) específicos-->
+      <h1 id="title">Codificador e Decodificador</h1> <!-- Elemento título-->
+      <p>Caesar Cipher</p> <!--Elemento parágrafo-->
+      
     </div>
-    <script src="index.js" type="module"></script>
+
+                    <!--Mensagens codificadas-->
+    <div class="texto"> <!--container com atributo de texto-->
+      
+        <h3>Digite sua mensagem:</h3> <!-- título-->
+        <input id="digite" placeholder="Digite aqui!"><br><br> <!--campo de entrada de texto, com um atributo que dá dica sobre o que digitar-->
+        <b>Deslocamento (desloc):</b><br><br> <!--texto em negrito e -->
+        <input type="number" id="desloc" min="0" oninput="validity.valid||(value='');"><br><br> <!--oninput evento que valida a entrada do usuário, se a entrada for inválida o valor campo será definido como vazio-->__
+    </div>
+
+    <div>
+        <button id= "codificar">Codificar</button> <!--Os botões HTML são elementos clicáveis ​​que podem ser usados ​​para criar uma ação em uma página da web, como enviar um formulário ou executar um script JavaScript.-->
+        <button id= "decodificar">Decodificar</button> <!--O id é um atributo exclusivo que pode ser usado para selecionar e manipular o botão HTML usando JavaScript ou CSS.-->
+    </div>
+
+            <!--Mensagens decodificadas-->
+    <div  class="result"> <!--contêiner com atributo class que é usado para atribuir uma classe aum elemento HTML-->
+         <h3 id="msgDecod"> Mensagem: </h3> <!--título com atributo id-->
+         <input id="result"> <!--campo de entrada de texto-->
+    </div>
+     
+
+      <script src="index.js" type="module"></script>
   </body>
 </html>

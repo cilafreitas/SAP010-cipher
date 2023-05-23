@@ -1,0 +1,42 @@
+
+:root{ 
+    background-image: url('imagem/codificacao.jpg');
+    width: 100vw;
+    height: 100vw;
+    background-size: cover;
+    
+}
+
+body{
+    color: rgb(5 67, 138);
+    color: rgb(22, 128, 128);
+    text-shadow:2px 2px 2px #c0e420, 2px 2px #c0e420;
+    font-size: 20px;
+}
+
+h1{
+    text-align: center;
+    font-size: 46px;
+    color: rgb(80, 99, 10);
+    text-shadow:2px 2px 2px #c0e420, 2px 2px #c0e420;
+}
+
+p{
+    text-align: center;
+    font-size: 36px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 2px 2px 2px #c0e420, 2px 2px #c0e420;
+    color: rgb(80, 99, 10);
+}
+
+button{
+    border: center;
+    width: 200px;
+    height: 50px;
+    font-size: medium;
+    background-color: rgb(80, 99, 10);
+    box-shadow: 10px 5px 10px 9px rgb(172, 166, 166);
+    padding-bottom: center;
+}
+
+
